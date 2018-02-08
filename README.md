@@ -1,10 +1,5 @@
-```
-import: http://purl.obolibrary.org/obo/to/imports/chebi_import.owl
-import: http://purl.obolibrary.org/obo/to/imports/go_import.owl
-import: http://purl.obolibrary.org/obo/to/imports/pato_import.owl
-import: http://purl.obolibrary.org/obo/to/imports/peco_import.owl
-import: http://purl.obolibrary.org/obo/to/imports/ro_import.owl
-```
+
+## Overview
 
 The plant trait ontology uses 5 subontologies:
 
@@ -14,8 +9,17 @@ The plant trait ontology uses 5 subontologies:
 * PECO
 * RO
 
-I used the ROBOT ontology converter to convert these subontologies from OWL to OBO.
+The Tripal importer cannot handle imports statements, nor can it import OWL files.  THese subontologies are only available in OWL.  I did not want to load all 5  full ontologies to test the PTO, so I used the ROBOT ontology converter to convert these subontologies from OWL to OBO.
 
+These OBO files are provided here.
+
+
+## Setup
+### Prerequisites
+
+The [ROBOT OBO tool](https://github.com/ontodev/robot/)
+
+### Creating this repo
 
 ```
 mkdir source_obo
@@ -37,7 +41,7 @@ robot convert --input chebi_subset.owl --output chebi_subset.obo
 
 ```
 
-warnings: ro several terms had masking errors:
+warnings: ro four terms had masking errors like below:
 
 ```
 ERROR MASKING ERROR «the axiom is not translated : DisjointClasses(<http://purl.obolibrary.org/obo/BFO_0000002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/BFO_0000003>))»
