@@ -1,7 +1,5 @@
 format-version: 1.2
 data-version: releases/2017-11-09
-default-namespace: plant_trait_ontology
-ontology: to
 saved-by: cooperl
 subsetdef: Allium_porrum "Terms_used_for_leek"
 subsetdef: Cucurbita "Terms_used_for_squash"
@@ -11,7 +9,8 @@ subsetdef: Saccharum "Terms_used_for_sugarcane"
 subsetdef: Solanaceae_spp "Terms_used_for_the_Solanaceae"
 subsetdef: Triticum_aestivum "Terms_used_for_wheat"
 subsetdef: Zea_mays "Terms_used_for_maize_or_corn"
-
+default-namespace: plant_trait_ontology
+ontology: to
 
 
 [Term]
