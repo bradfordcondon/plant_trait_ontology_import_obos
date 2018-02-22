@@ -2,6 +2,8 @@
 
 use grep to remove lines with `.*CHEBI.*` `.*PATO:.*`
 
+`intersection_of.*GO:.*` to not delete all the definitions
+
 also remove `{is_inferred="true"}`
 
 

@@ -1,5 +1,7 @@
 format-version: 1.2
 data-version: releases/2017-11-09
+default-namespace: plant_trait_ontology
+ontology: to
 saved-by: cooperl
 subsetdef: Allium_porrum "Terms_used_for_leek"
 subsetdef: Cucurbita "Terms_used_for_squash"
@@ -9,14 +11,7 @@ subsetdef: Saccharum "Terms_used_for_sugarcane"
 subsetdef: Solanaceae_spp "Terms_used_for_the_Solanaceae"
 subsetdef: Triticum_aestivum "Terms_used_for_wheat"
 subsetdef: Zea_mays "Terms_used_for_maize_or_corn"
-default-namespace: plant_trait_ontology
-import: http://purl.obolibrary.org/obo/po.owl
-import: http://purl.obolibrary.org/obo/to/imports/chebi_import.owl
-import: http://purl.obolibrary.org/obo/to/imports/go_import.owl
-import: http://purl.obolibrary.org/obo/to/imports/pato_import.owl
-import: http://purl.obolibrary.org/obo/to/imports/peco_import.owl
-import: http://purl.obolibrary.org/obo/to/imports/ro_import.owl
-ontology: to
+
 
 
 [Term]
@@ -11449,40 +11444,3 @@ name: shoot system zinc content
 def: "A zinc content trait (TO:0020090) which is the zinc ion (CHEBI:27365) composition in the shoot system (PO:0009006)." [https://search.proquest.com/docview/1426182399, TO:cooperl]
 synonym: "shooCFt Zn content (related)" RELATED []
 xref: TO_GIT:412
-[Typedef]
-id: evaluation_location
-name: evaluation location[Typedef]
-id: from_country
-name: from country[Typedef]
-id: has_absolute_phenotype
-name: has absolute phenotype[Typedef]
-id: has_dividend_entity
-name: has dividend entity[Typedef]
-id: has_dividend_quality
-name: has dividend quality[Typedef]
-id: has_divisor_entity
-name: has divisor entity[Typedef]
-id: has_divisor_quality
-name: has divisor quality[Typedef]
-id: has_part
-name: has part
-xref: BFO:0000051[Typedef]
-id: has_phenotype_score
-name: has phenotype score[Typedef]
-id: has_phenotype_variable
-name: has phenotype variable[Typedef]
-id: has_ratio_quality
-name: has ratio quality[Typedef]
-id: has_relative_phenotype
-name: has relative phenotype[Typedef]
-id: inheres_in
-name: inheres in
-xref: RO:0000052[Typedef]
-id: occurs_in
-name: occurs in
-xref: BFO:0000066[Typedef]
-id: part_of
-name: part of
-xref: BFO:0000050[Typedef]
-id: relative_to
-name: relative to
